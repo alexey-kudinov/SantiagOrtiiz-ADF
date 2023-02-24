@@ -1,0 +1,20 @@
+{
+	"name": "powerquery1",
+	"properties": {
+		"type": "WranglingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"name": "AzureSynapseAnalyticsTable2",
+					"script": "source(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tisolationLevel: 'READ_UNCOMMITTED',\n\tformat: 'table',\n\tstaged: false) ~> AzureSynapseAnalyticsTable2",
+					"dataset": {
+						"referenceName": "AzureSynapseAnalyticsTable2",
+						"type": "DatasetReference"
+					}
+				}
+			],
+			"script": "section Section1;\r\nshared AzureSynapseAnalyticsTable2 = let AdfDoc = Sql.Database(\"datawarehousedb.sql.azuresynapse.net\", \"DedicatedDWDB\", [CreateNavigationProperties = false]), InputTable = AdfDoc{[Schema=\"dbo\",Item=\"mockdata\"]}[Data] in InputTable;\r\nshared UserQuery = let Source = #\"AzureSynapseAnalyticsTable2\",\r\n  #\"Renamed columns\" = Table.RenameColumns(Source, {{\"Column_1\", \"id\"}, {\"Column_2\", \"first name\"}, {\"Column_3\", \"last name\"}, {\"Column_4\", \"email\"}, {\"Column_5\", \"gender\"}}) in #\"Renamed columns\";\r\n",
+			"documentLocale": "en-us"
+		}
+	}
+}

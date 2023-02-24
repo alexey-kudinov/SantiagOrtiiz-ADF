@@ -1,0 +1,46 @@
+{
+	"name": "AzureSynapseAnalyticsTable2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSynapseAnalytics1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlDWTable",
+		"schema": [
+			{
+				"name": "Column_1",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Column_2",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Column_3",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Column_4",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Column_5",
+				"type": "nvarchar"
+			},
+			{
+				"name": "network_address",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LessThan50",
+				"type": "bit"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "mockdata"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
