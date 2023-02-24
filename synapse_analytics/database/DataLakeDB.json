@@ -1,0 +1,25 @@
+{
+	"name": "DataLakeDB",
+	"properties": {
+		"Name": "DataLakeDB",
+		"EntityType": "DATABASE",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"Properties": {
+			"IsSyMSCDMDatabase": true
+		},
+		"Source": {
+			"Provider": "ADLS",
+			"Location": "abfss://sample-data@santiagortiiz.dfs.core.windows.net/DataLakeDB",
+			"Properties": {
+				"FormatType": "csv",
+				"LinkedServiceName": "datawarehousedb-WorkspaceDefaultStorage"
+			}
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 1,
+		"ObjectId": "0db573dc-6941-4caf-afde-3e65d7dd3a1e"
+	},
+	"type": "DATABASE"
+}

@@ -1,0 +1,423 @@
+{
+	"name": "pyspark foundations",
+	"properties": {
+		"nbformat": 4,
+		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "MySparkPool",
+			"type": "BigDataPoolReference"
+		},
+		"sessionProperties": {
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
+			"numExecutors": 2,
+			"runAsWorkspaceSystemIdentity": false,
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "2",
+				"spark.dynamicAllocation.maxExecutors": "2",
+				"spark.autotune.trackingId": "4cec6c2a-fa84-4c8e-999c-d5b19b7b300c"
+			}
+		},
+		"metadata": {
+			"saveOutput": true,
+			"synapse_widget": {
+				"version": "0.1",
+				"state": {
+					"079f3b3b-e1a4-4afe-aae2-2a76944d0d60": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "1",
+										"1": "Bjorn",
+										"2": "bbryceson0@jalbum.net",
+										"3": "Male",
+										"4": "Violet",
+										"5": "Philippines",
+										"6": "PHP",
+										"7": "03/07/2021"
+									},
+									{
+										"0": "2",
+										"1": "Beauregard",
+										"2": "bcarlton1@ocn.ne.jp",
+										"3": "Male",
+										"4": "Aquamarine",
+										"5": "Brazil",
+										"6": "BRL",
+										"7": "17/09/2020"
+									},
+									{
+										"0": "3",
+										"1": "Michaela",
+										"2": "mmatticci2@so-net.ne.jp",
+										"3": "Female",
+										"4": "Maroon",
+										"5": "Iran",
+										"6": "IRR",
+										"7": "27/02/2022"
+									},
+									{
+										"0": "4",
+										"1": "Wyn",
+										"2": "wmott3@statcounter.com",
+										"3": "Male",
+										"4": "Mauv",
+										"5": "Russia",
+										"6": "RUB",
+										"7": "21/01/2023"
+									},
+									{
+										"0": "5",
+										"1": "Denney",
+										"2": "dyvens4@si.edu",
+										"3": "Male",
+										"4": "Maroon",
+										"7": "04/09/2022"
+									},
+									{
+										"0": "6",
+										"1": "Valery",
+										"2": "vsurphliss5@ucla.edu",
+										"3": "Female",
+										"4": "Khaki",
+										"5": "Philippines",
+										"6": "PHP",
+										"7": "03/08/2022"
+									},
+									{
+										"0": "7",
+										"1": "Florinda",
+										"2": "flindsley6@virginia.edu",
+										"3": "Female",
+										"4": "Red",
+										"5": "Greece",
+										"6": "EUR",
+										"7": "20/08/2022"
+									},
+									{
+										"0": "8",
+										"1": "Vinny",
+										"2": "vwoolens7@bing.com",
+										"3": "Male",
+										"4": "Mauv",
+										"5": "China",
+										"6": "CNY",
+										"7": "07/08/2022"
+									},
+									{
+										"0": "9",
+										"1": "Trixy",
+										"2": "tmcilenna8@google.nl",
+										"3": "Female",
+										"4": "Aquamarine",
+										"5": "Indonesia",
+										"6": "IDR",
+										"7": "11/02/2023"
+									},
+									{
+										"0": "10",
+										"1": "Giorgia",
+										"2": "gsize9@umich.edu",
+										"3": "Genderqueer",
+										"4": "Puce",
+										"5": "Philippines",
+										"6": "PHP",
+										"7": "27/08/2020"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "id",
+										"type": "string"
+									},
+									{
+										"key": "1",
+										"name": "name",
+										"type": "string"
+									},
+									{
+										"key": "2",
+										"name": "email",
+										"type": "string"
+									},
+									{
+										"key": "3",
+										"name": "gender",
+										"type": "string"
+									},
+									{
+										"key": "4",
+										"name": "color",
+										"type": "string"
+									},
+									{
+										"key": "5",
+										"name": "country",
+										"type": "string"
+									},
+									{
+										"key": "6",
+										"name": "currency_code",
+										"type": "string"
+									},
+									{
+										"key": "7",
+										"name": "date_joined",
+										"type": "string"
+									}
+								],
+								"truncated": false
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "count",
+									"categoryFieldKeys": [
+										"0"
+									],
+									"seriesFieldKeys": [
+										"0"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					}
+				}
+			},
+			"enableDebugMode": false,
+			"kernelspec": {
+				"name": "synapse_pyspark",
+				"display_name": "Synapse PySpark"
+			},
+			"language_info": {
+				"name": "python"
+			},
+			"a365ComputeOptions": {
+				"id": "/subscriptions/73f232ea-b4c6-4c8c-9727-e826e7f1c51c/resourceGroups/epam_resources/providers/Microsoft.Synapse/workspaces/datawarehousedb/bigDataPools/MySparkPool",
+				"name": "MySparkPool",
+				"type": "Spark",
+				"endpoint": "https://datawarehousedb.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/MySparkPool",
+				"auth": {
+					"type": "AAD",
+					"authResource": "https://dev.azuresynapse.net",
+					"authHeader": null
+				},
+				"sparkVersion": "3.3",
+				"nodeCount": 3,
+				"cores": 4,
+				"memory": 28,
+				"extraHeader": null
+			},
+			"sessionKeepAliveTimeout": 30
+		},
+		"cells": [
+			{
+				"cell_type": "code",
+				"metadata": {
+					"microsoft": {
+						"language": "python"
+					},
+					"collapsed": false
+				},
+				"source": [
+					"%%pyspark\r\n",
+					"df = spark.read.load('abfss://training@santiagortiiz.dfs.core.windows.net/datasets/dummy_users.csv', format='csv',\r\n",
+					"    header=True\r\n",
+					")\r\n",
+					"display(df.limit(10))"
+				],
+				"execution_count": 2
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"# Populate a new dataframe called topRecords\r\n",
+					"topRecords = df.select(\r\n",
+					"    \"name\", \"email\",\r\n",
+					"    \"gender\", \"color\",\r\n",
+					"    \"currency_code\")\r\n",
+					"\r\n",
+					"# Populate a temporary view so we can query from SQL\r\n",
+					"topRecords.createOrReplaceTempView(\"top_records\")\r\n",
+					"\r\n",
+					"topRecords.show(10)"
+				],
+				"execution_count": 5
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"microsoft": {
+						"language": "sparksql"
+					},
+					"collapsed": false
+				},
+				"source": [
+					"%%sql\r\n",
+					"\r\n",
+					"-- create a new temporary view with the top 5 by using SQL\r\n",
+					"CREATE OR REPLACE TEMPORARY VIEW top_5_records\r\n",
+					"AS\r\n",
+					"    select gender, color, currency_code\r\n",
+					"    from top_records\r\n",
+					"    where gender = 'Female' and currency_code IS NOT NULL\r\n",
+					"    order by currency_code"
+				],
+				"execution_count": 14
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"top5Records = sqlContext.table(\"top_5_records\")\r\n",
+					"\r\n",
+					"top5Records.show(5)"
+				],
+				"execution_count": 15
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"from pyspark.sql import functions as f\r\n",
+					"\r\n",
+					"top5Overall = (top5Records.select(\"color\",\"currency_code\")\r\n",
+					"    .orderBy(f.col(\"color\").desc())\r\n",
+					"    .limit(5))\r\n",
+					"\r\n",
+					"top5Overall.show()"
+				],
+				"execution_count": 42
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"## Parameters"
+				]
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"tags": [
+						"parameters"
+					]
+				},
+				"source": [
+					"import uuid\r\n",
+					"\r\n",
+					"# Generate random GUID\r\n",
+					"runId = uuid.uuid4()"
+				],
+				"execution_count": 44
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"microsoft": {
+						"language": "python"
+					}
+				},
+				"source": [
+					"%%pyspark\r\n",
+					"\r\n",
+					"top5Overall.write.parquet('abfss://training@santiagortiiz.dfs.core.windows.net/spark-outputs/' + str(runId) + '.parquet')"
+				],
+				"execution_count": 45
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					""
+				]
+			}
+		]
+	}
+}
