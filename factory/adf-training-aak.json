@@ -1,0 +1,9 @@
+{
+	"name": "adf-training-aak",
+	"location": "northeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "d1a37a2d-4825-41b3-9cfc-3b858e5c9594",
+		"tenantId": "b41b72d0-4e9f-4c26-8a69-f949f367c91d"
+	}
+}
